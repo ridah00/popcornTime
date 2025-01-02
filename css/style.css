@@ -1,12 +1,22 @@
 body header nav div {
-  background: #E38F2A;
+  background: #e38f2a;
+}
+body header nav div form input {
+  width: 20rem !important;
 }
 body header nav div img {
   width: 4rem;
 }
 body main #movie_section .card {
+  width: 12rem;
   border: 0;
   padding: 0;
+}
+body main #movie_section .card img {
+  height: 16rem;
+}
+body main #movie_section .card #heart {
+  font-size: 2rem;
 }
 body main #movie_section .card .card-body {
   padding: 0;
