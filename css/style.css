@@ -1,1 +1,20 @@
-/*# sourceMappingURL=style.css.map */
+body header nav div {
+  background: #E38F2A;
+}
+body header nav div img {
+  width: 4rem;
+}
+body main #movie_section .card {
+  border: 0;
+  padding: 0;
+}
+body main #movie_section .card .card-body {
+  padding: 0;
+}
+body main #movie_section .card .card-body .card-text {
+  margin: 0;
+}
+body main #movie_section .card .card-body .card-text1 {
+  float: right;
+  margin: 0;
+}/*# sourceMappingURL=style.css.map */

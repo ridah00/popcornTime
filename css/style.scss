@@ -1,0 +1,30 @@
+body {
+  header {
+    nav {
+      div {
+        background:#E38F2A ;
+        img {
+          width: 4rem;
+        }
+      }
+    }
+  }
+  main {
+    #movie_section {
+      .card {
+        border: 0;
+        padding: 0;
+        .card-body {
+          padding: 0;
+          .card-text {
+            margin: 0;
+          }
+          .card-text1 {
+            float: right;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
