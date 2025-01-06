@@ -16,7 +16,7 @@
   <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
       <div class="container-fluid p-1">
-        <a href="#"><img onclick="show_movies()" src="./img/popcorntime_logo1.png" alt="popcorntime logo"> </a>
+        <a><img onclick="show_movies()" src="./img/popcorntime_logo1.png" alt="popcorntime logo"> </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -24,39 +24,40 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#" onclick="show_movies()">Accueil</a>
+              <a class="nav-link active" aria-current="page" onclick="show_movies()">Accueil</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="upcoming_button" href="#">Prochains</a>
+              <a class="nav-link" id="upcoming_button" >Prochains</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              <a class="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 Catégories
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Romance</a></li>
-                <li><a class="dropdown-item" href="#">Comédie</a></li>
-                <li><a class="dropdown-item" href="#">Science-fiction</a></li>
-                <li><a class="dropdown-item" href="#">Horreur</a></li>
+                <li><a class="dropdown-item">Action</a></li>
+                <li><a class="dropdown-item">Romance</a></li>
+                <li><a class="dropdown-item">Comédie</a></li>
+                <li><a class="dropdown-item">Science-fiction</a></li>
+                <li><a class="dropdown-item">Horreur</a></li>
 
               </ul>
             </li>
           </ul>
-          <form class="d-flex" role="search">
+          <div class="search_form d-flex" role="search">
             <input id="search_input" class="form-control me-2" type="search" placeholder="Tapez le nom de votre film" aria-label="Search">
             <button id="search_button" class="btn btn-outline-success" type="button">Chercher</button>
-          </form>
+          </div>
         </div>
       </div>
     </nav>
   </header>
   <main>
+    
 
     <section id="movie_section" class="row justify-content-evenly gap-3 my-5 m-0 scroll-container">
+      </section>
 
-    </section>
   </main>
 
 
@@ -67,3 +68,4 @@
 </body>
 
 </html>
+

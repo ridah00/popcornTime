@@ -1,7 +1,7 @@
 body header nav div {
   background: #e38f2a;
 }
-body header nav div form input {
+body header nav div .search_form input {
   width: 15rem !important;
 }
 body header nav div img {
