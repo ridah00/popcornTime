@@ -22,7 +22,8 @@ body header nav div img {
 }
 body main .intro {
   margin: 2rem;
-  font-family: "Lucida Handwriting";
+  font-family: "Copperplate";
+  font-style: italic;
 }
 body main .intro p {
   font-size: 2rem;

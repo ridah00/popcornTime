@@ -12,7 +12,7 @@ const options = {
   fetch(`https://api.themoviedb.org/3/movie/${movie_id}/credits?language=fr-FR`, options)
     .then((reponse) => reponse.json())
     .then((credit) => {
-          
+
         const options = {
             method: 'GET',
             headers: {
@@ -56,9 +56,11 @@ const options = {
         })
 
         for (let acteur = 0; acteur < 10; acteur++) {
+          let poster_path ="";
+          ( credit.cast[acteur].profile_path == null) ? poster_path = `./img/images_acteur.jpg` : poster_path = `https://image.tmdb.org/t/p/w300${credit.cast[acteur].profile_path}`;
             document.getElementById("scroll").innerHTML += `
             <div class="card p-0" style="width: 10rem;">
-                <img src="https://image.tmdb.org/t/p/w500${credit.cast[acteur].profile_path}" class="card-img-top"
+                <img style="width: 158px;height: 237px;" src="${poster_path}" class="card-img-top"
                     alt="Image de ${credit.cast[acteur].name}">
                 <div class="card-body">
                     <h5 class="card-title">${credit.cast[acteur].name}</h5>
@@ -98,6 +100,7 @@ const options = {
             </a> 
             <div class="card-body bg-dark ">
                 <p class="card-text text-light">${item.title}</p>
+                
                 <p class="card-text1 text-light">${item.vote_average}/10 <i class="bi bi-star-fill text-warning"></i></p>
              </div>
             </div>
