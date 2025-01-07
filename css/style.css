@@ -1,3 +1,6 @@
+body header nav {
+  z-index: 11;
+}
 body header nav div {
   background: #e38f2a;
 }
@@ -6,6 +9,32 @@ body header nav div .search_form input {
 }
 body header nav div img {
   width: 4rem;
+}
+body main #affiche .content {
+  position: relative;
+  z-index: 3;
+}
+body main #affiche div .rounded-circle {
+  width: -moz-max-content;
+  width: max-content;
+}
+body main #affiche::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 31, 0, 0.781);
+  z-index: 2;
+}
+body main #acteur {
+  background-color: white;
+  position: relative;
+  z-index: 10;
+}
+body main #acteur #scroll {
+  overflow: auto;
 }
 body main #movie_section .card {
   width: 12rem;
