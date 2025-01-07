@@ -1,9 +1,19 @@
 body {
   header {
     nav {
+      font-family: "Copperplate";
+      font-weight: bold;
+      font-size: 1.5rem;
       z-index: 11;
       div {
         background: #e38f2a;
+        li{
+          padding-inline: 2rem;
+        }
+        li :hover {
+          border-radius: 1rem;
+          background: #ca7d1e;
+        }
         .search_form{
           input{
             width: 15rem !important; 
@@ -16,6 +26,16 @@ body {
     }
   }
   main {
+    .intro {
+      margin: 2rem;
+      font-family: "Lucida Handwriting";
+      p{
+        font-size: 2rem;
+        i{
+          font-size: 3rem;
+        }
+      }
+    }
     #affiche{
       .content{
         position: relative;

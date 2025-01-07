@@ -12,7 +12,7 @@ const options = {
   fetch(`https://api.themoviedb.org/3/movie/${movie_id}/credits?language=fr-FR`, options)
     .then((reponse) => reponse.json())
     .then((credit) => {
-
+          
         const options = {
             method: 'GET',
             headers: {

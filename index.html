@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,11 +27,10 @@
               <a href="#" class="nav-link active" aria-current="page" onclick="show_movies()">Accueil</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link" id="upcoming_button" >Prochains</a>
+              <a href="#" class="nav-link" id="upcoming_button">Prochains</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
+              <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Catégories
               </a>
               <ul class="dropdown-menu">
@@ -44,7 +44,8 @@
             </li>
           </ul>
           <div class="search_form d-flex" role="search">
-            <input id="search_input" class="form-control me-2" type="search" placeholder="Tapez le nom de votre film" aria-label="Search">
+            <input id="search_input" class="form-control me-2" type="search" placeholder="Tapez le nom de votre film"
+              aria-label="Search">
             <button id="search_button" class="btn btn-outline-success" type="button">Chercher</button>
           </div>
         </div>
@@ -52,11 +53,16 @@
     </nav>
   </header>
   <main>
-    
+    <section class="intro text-center text-light">
+      <p> Bienvenue sur PopcornTime : Le Cinéma à Portée de Main ! <i> 🍿 </i>  </p>
+
+      <p>Sur PopcornTime, découvrez les meilleurs films, séries et actus du grand écran. Une expérience aussi captivante
+      qu'un bol de popcorn devant votre écran. Préparez-vous à savourer le cinéma comme jamais ! 🎬</p>
+    </section>
 
     <section id="movie_section" class="row gap-3 my-5 m-0 scroll-container">
     </section>
-    
+
   </main>
 
 
@@ -67,4 +73,3 @@
 </body>
 
 </html>
-
